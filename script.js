@@ -52,7 +52,7 @@ function showWinner (message, isDraw, source) {
         figure.appendChild(mainResultImg);
         const mainWinnerImg = document.createElement('img');
         mainWinnerImg.setAttribute('id', 'winner-img');
-        mainWinnerImg.setAttribute('src', './winner image.png');
+        mainWinnerImg.setAttribute('src', './winner image.webp');
         figure.appendChild(mainWinnerImg);
         
         //Append figure into div element
@@ -101,7 +101,7 @@ const showResult = (event) => {
             (chooseBtn[0].innerHTML === 'Paper' && chooseBtn[1].innerHTML === 'Rock') || 
             (chooseBtn[0].innerHTML === 'Scissors' && chooseBtn[1].innerHTML === 'Paper')) {
 
-            showWinner('Player1 Winner', false, `./player 1.png`);
+            showWinner('Player1 Winner', false, `./player 1.webp`);
             showElement();
 
             //remove all events
@@ -115,7 +115,7 @@ const showResult = (event) => {
             (chooseBtn[1].innerHTML === 'Paper' && chooseBtn[0].innerHTML === 'Rock') || 
             (chooseBtn[1].innerHTML === 'Scissors' && chooseBtn[0].innerHTML === 'Paper')) {
             
-            showWinner('Player2 winner', false, `./player 2.png`);
+            showWinner('Player2 winner', false, `./player 2.webp`);
             showElement();
 
             //remove all events
